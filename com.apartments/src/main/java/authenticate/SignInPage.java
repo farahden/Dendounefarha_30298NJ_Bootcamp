@@ -137,7 +137,8 @@ public void createAccountMethod() {
         setCreateAccountButton();
     }
 
-    /**Skipping field summary
+    /**negative testing:
+     * Skipping field summary
      * Given a user of apartment.com
      * And navigates to the home page
      * And  hovers over SignUp and clicks
