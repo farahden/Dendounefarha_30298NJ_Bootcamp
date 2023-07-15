@@ -9,7 +9,7 @@ public class MapPage extends BasePage {
 
 public MapPage(){PageFactory.initElements(driver,this); }
 
-/**switch to hybrid
+/***switch to hybrid
  * Given a user navigates to the home page
  *  And clicks on drawer Menu
  *  And user clicks on Apartments

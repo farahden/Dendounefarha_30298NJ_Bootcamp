@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage extends BasePage{
-    /**Sign In test summary
+    /***Sign In test summary
      * Given a user of apartment.com
      * And navigates to the home page
      * And  hovers over SignUp and clicks

@@ -12,7 +12,7 @@ public DrawerMenu(){
 }
 
 
-/**Test open Drawer Menu
+/***Test open Drawer Menu
  * Given  a user navigates to the home page
  * when clicks on drawer Menu
  * then the drawer should be appeared
