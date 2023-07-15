@@ -112,7 +112,8 @@ public void createAccountMethod() {
         setCreateAccountButton();
     }
 
-    /**Enter Invalid verified PassWord
+    /**negative testing:
+     * 3-Enter Invalid verified PassWord
      * Given a user of apartment.com
      * And navigates to the home page
      * And  hovers over SignUp and clicks
