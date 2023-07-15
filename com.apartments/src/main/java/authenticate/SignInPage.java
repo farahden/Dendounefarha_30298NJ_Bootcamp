@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage extends BasePage{
-    /***Sign In test summary
+    /**Sign In test summary:
      * Given a user of apartment.com
      * And navigates to the home page
      * And  hovers over SignUp and clicks
@@ -59,8 +59,9 @@ public void createAccountMethod() {
 }
 
 
-/**Negative Testing Invalid Email
-Given a user of apartment.com
+/**Negative Testing
+ * 1-Invalid Email:
+     *Given a user of apartment.com
      * And navigates to the home page
      * And  hovers over SignUp and clicks
      * and enters a valid firstName
