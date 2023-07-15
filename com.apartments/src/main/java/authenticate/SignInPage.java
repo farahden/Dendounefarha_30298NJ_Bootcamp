@@ -87,7 +87,8 @@ public void createAccountMethod() {
     }
 
 
-    /**Invalid PassWord
+    /**negative testing:
+     * 2- Invalid PassWord
      * Given a user of apartment.com
      * And navigates to the home page
      * And  hovers over SignUp and clicks
