@@ -80,7 +80,7 @@ public void subMenu(){
      setCity();
  }
 
- /**Back To Home Page
+ /**Back To Home Page:
   * Given  a user navigates to the home page
   *  * And clicks on drawer Menu
   *  * And user clicks on Apartments
