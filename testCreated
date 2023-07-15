@@ -1,0 +1,44 @@
+https://www.verizon.com/
+created 7 passed test cases
+1 failed
+used fluent wait
+mouse hover==>7
+/*************************************************
+https://www.rent.com/===>made inside appartments
+12 passed tests created
+used log in
+sign in
+negative signin
+drawer menu
+get adress from map point==>12
+******************************************************
+https://www.ebay.com
+==>4 passed tests
+***************************************************************************
+https//:www.expedia.com
+1 test passed
+ 3 failed tests (date picker)
+tried to pick dates just with locators but failed again==>4
+*************************************************************************
+https//:www.booking.com
+created 7 passed tests,used select from dropdown
+used submitt button
+created date picker and did not work again==>7
+***********************************************
+https//:investing.com
+fakedata 1 passe
+1 swich frame communication link faillure
+3 functionnal test header passed==>6
+************************************************
+https//:bmwusa.com
+==>created 6 tests
+4 passed 2 had troubles with locators
+tried id ,css and xpath
+*************************************************
+https//:espn.com
+authentication:locators are so dynamic hard to find folowed multiple
+steps to create account by using fake data
+and confirmed account created
+and then log out
+==> 8 tests created
+******************************************
