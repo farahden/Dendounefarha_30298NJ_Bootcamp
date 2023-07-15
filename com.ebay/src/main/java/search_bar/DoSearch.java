@@ -4,6 +4,10 @@ import base.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.DataProvider;
+import utils.ExcelData;
+
+import java.io.File;
 
 public class DoSearch extends BasePage {
     public DoSearch(){
@@ -38,6 +42,25 @@ public void research(){
     deletesearch();
     setSearchbar();
 }
+
+/**search with data provider*/
+
+@DataProvider(name="addToWatchListDataProvider")
+    public Object[][] loginDataProvider()
+    {   String dataPath="src"+ File.separator+"test"+File.separator+"ressources"+File.separator+"test_enter_search.xlsx";
+        ExcelData data=new ExcelData(dataPath);
+
+        String drivendata[][]=data.readStringArrays("doLogIn");
+        return drivendata;
+
+
+    }
+
+
+
+
+
+
 
 
 

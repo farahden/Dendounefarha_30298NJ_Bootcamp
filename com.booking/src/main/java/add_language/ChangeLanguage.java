@@ -10,6 +10,11 @@ public class ChangeLanguage extends BasePage {
     public ChangeLanguage(){
         PageFactory.initElements(driver,this);
     }
+    /**change language
+     * given a user navigates to home page
+     * and clicks on american flags
+     * when user clicks on francais
+     * then language should be french*/
 
     @FindBy(xpath = "//img[@src='https://t-cf.bstatic.com/design-assets/assets/v3.77.0/images-flags/Us@3x.png']")
     public WebElement americanFlagButton;

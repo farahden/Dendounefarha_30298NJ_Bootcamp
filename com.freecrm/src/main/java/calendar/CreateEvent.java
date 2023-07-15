@@ -87,12 +87,43 @@ public void enterTitle(){sendKeysToElement(inputtitle,"set the app logo");}
             //addcalender();
         //pickstartingdate();
         }
-   /* @FindBy(xpath = "")
-    public WebElement enddate;
-    public void enddate(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
+    @FindBy(xpath = "//div[.='SelectImportantOpportunityOptionalCriticalMeetingSocialTime OffPrivate']")
+    public WebElement selectCategory;
+    public void selectcategory(){
+        selectFromDropdownByVisibleText(selectCategory,"Important");
+    }
+
+    @FindBy(xpath = "//textarea[@name='description']")
+    public WebElement description;
+    public void addDescription(){sendKeysToElement(description,"this is a test");}
+
+
+    public void pickendingdate(){
+        driver.findElement(By.xpath( "//input[@class='calendarField react-datepicker-ignore-onclickoutside']")).click();
+        String year = "2023";
+        String month = "08";
+        String day = "17";
+        while (true) {
+            String monthYear = driver.findElement(By.xpath("//input[@class='calendarField react-datepicker-ignore-onclickoutside']")).getText();
+            String arr[] = monthYear.split(" ");
+            String mon = arr[0];
+            String yr = arr[1];
+            if (mon.equals(month) && yr.equals(year))
+                break;
+            else
+                driver.findElement(By.xpath("//button[@class='react-datepicker__navigation react-datepicker__navigation--next react-datepicker__navigation--next--with-time']")).click();
+        }
+        List<WebElement> allDates = driver.findElements(By.xpath("//div[@class='react-datepicker__month']"));
+        for (WebElement date : allDates) {
+            String dt = date.getText();
+            if (dt.equals(date)) {
+                date.click();
+                break;
+            }
+        }}
+
+
+   /* public void setElement(){}
     @FindBy(xpath = "")
     public WebElement element;
     public void setElement(){}
