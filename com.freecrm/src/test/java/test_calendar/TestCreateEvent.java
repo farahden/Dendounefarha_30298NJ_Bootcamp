@@ -9,7 +9,7 @@ public class TestCreateEvent extends BasePage {
 
 
     @Test
-    public void testcreateEvent(){
+public void testcreateEvent(){
 
         CreateEvent create=new CreateEvent();
         create.createEvent();
@@ -19,7 +19,13 @@ public class TestCreateEvent extends BasePage {
 @Test
 public void testPickstartingdate(){
 CreateEvent date=new CreateEvent();
-date.pickstartingdate();
+date.createEvent();
+}
+
+@Test
+    public void testendingdate(){
+        CreateEvent endDate=new CreateEvent();
+        endDate.pickdateending();
 }
 
 

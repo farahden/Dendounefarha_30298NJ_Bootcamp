@@ -54,9 +54,10 @@ public void createEvent(){
 @FindBy(xpath = "//input[@name='title']")
     public WebElement inputtitle;
 public void enterTitle(){sendKeysToElement(inputtitle,"set the app logo");}
-
+    Authenticate login=new Authenticate();
     /*pick starting date*/
     public void pickstartingdate(){
+
         driver.findElement(By.xpath( "//input[@class='calendarField react-datepicker-ignore-onclickoutside']")).click();
         String year = "2023";
         String month = "08";
@@ -98,7 +99,7 @@ public void enterTitle(){sendKeysToElement(inputtitle,"set the app logo");}
     public void addDescription(){sendKeysToElement(description,"this is a test");}
 
 
-    public void pickendingdate(){
+public void pickendingdate(){
         driver.findElement(By.xpath( "//input[@class='calendarField react-datepicker-ignore-onclickoutside']")).click();
         String year = "2023";
         String month = "08";
@@ -121,6 +122,16 @@ public void enterTitle(){sendKeysToElement(inputtitle,"set the app logo");}
                 break;
             }
         }}
+
+  public void pickdate(){
+        createEvent();
+        pickstartingdate();
+  }
+
+  public void pickdateending(){
+      createEvent();
+      pickendingdate();
+  }
 
 
 
