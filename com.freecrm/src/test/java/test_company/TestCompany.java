@@ -13,4 +13,13 @@ public class TestCompany extends BasePage {
         Assert.assertTrue(isElementVisible(company.created));
 
     }
+
+@Test
+    public void testdeletecompany(){
+     CompanyPage delete=new CompanyPage();
+     delete.trydelete();
+     Assert.assertFalse(isElementVisible(delete.cancelButton));
+}
+
+
 }

@@ -22,18 +22,7 @@ public class Registration extends BasePage {
  * when user submit registration
  * then account is created*/
 
-/**Registaer with invalid data
- * Given a user navigates to bmw home page
- * and clicks on MyBmw an clicks
- * and clicks on register now
- * and select salutation
- * and enters a valid firstname
- * and enters a valid lastname
- * and enters invalid email
- * and enters a valid password
- * and check box of terme and condition
- * when user submit registration
- * then error message should occurs*/
+
 
 @FindBy(xpath = "//a[@href='http://mybmw.bmwusa.com']")
 public WebElement myBMW;
@@ -89,6 +78,20 @@ public void createNewAccount() {
    checkbox();
    submition();
 }
+
+/**Registaer with invalid data
+     * Given a user navigates to bmw home page
+     * and clicks on MyBmw an clicks
+     * and clicks on register now
+     * and select salutation
+     * and enters a valid firstname
+     * and enters a valid lastname
+     * and enters invalid email
+     * and enters a valid password
+     * and check box of terme and condition
+     * when user submit registration
+     * then error message should occurs*/
+
 public void CreateAccountInvalidEmail()  {
     myBMWmeth();
     registration();

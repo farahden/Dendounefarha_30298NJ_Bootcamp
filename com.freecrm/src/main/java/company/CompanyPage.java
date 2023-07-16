@@ -10,10 +10,15 @@ public class CompanyPage extends BasePage {
     public CompanyPage(){
         PageFactory.initElements(driver,this);
     }
- /**Given an authenticated user navigated to his account
+
+
+ /**Create company
+  * Given an authenticated user navigated to his account
   * And hover over
   * and click on  plus sign
-  * */
+  * and fill required informations
+  * when user clicks on save
+  * then company should be saved successfully*/
 
 @FindBy(xpath = "//div[@id='main-nav']")
     public WebElement sidebar;
@@ -55,4 +60,35 @@ public void createNewCompanie(){
     number();
     save();
 }
+
+/**delete company
+ * Given authenticated user hover over side menu
+ * And clicks on company
+ * when clicks on delete
+ * And a warning message pop out
+ * When user clicks on cancel
+ * then the pop out should be exited*/
+
+@FindBy(xpath = "//span[.='Companies']")
+    public WebElement company;
+@FindBy(xpath = "//tr[2]//div[@class='ui fitted read-only checkbox']")
+public WebElement checkAmazon;
+@FindBy(xpath = "//button[@class='ui left floated button']")
+public WebElement cancelButton;
+public void company(){clickOnElement(company);}
+public void amazon(){safeClickOnElement(checkAmazon);}
+public void cancellation(){clickOnElement(cancelButton);}
+public void trydelete(){
+    log.setLogIn();
+    navigatetosidebar();
+    company();
+    amazon();
+    cancellation();
+}
+
+
+
+
+
+
 }

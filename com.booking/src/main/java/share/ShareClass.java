@@ -1,8 +1,7 @@
-package drag_drop_share;
+package share;
 
 import base.BasePage;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 

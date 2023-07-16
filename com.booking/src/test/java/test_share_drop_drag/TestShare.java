@@ -1,7 +1,7 @@
 package test_share_drop_drag;
 
 import base.BasePage;
-import drag_drop_share.ShareClass;
+import share.ShareClass;
 import org.testng.annotations.Test;
 
 public class TestShare extends BasePage {

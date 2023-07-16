@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage extends BasePage{
+    //issues to navigate to apartments //
+    //https://www.rent.com//
     /**Sign In test summary:
      * Given a user of apartment.com
      * And navigates to the home page

@@ -11,7 +11,8 @@ public class PickDepartureDate extends BasePage {
     public PickDepartureDate(){
         PageFactory.initElements(driver,this);
     }
-public void pickDepartureDateMeth(){
+
+    public void pickDepartureDateMeth(){
   driver.findElement(By.xpath("//button[.='Check-in Date']")).click();
     String year = "2023";
     String month = "08";

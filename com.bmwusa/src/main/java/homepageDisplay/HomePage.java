@@ -11,14 +11,16 @@ public class HomePage extends BasePage {
     public HomePage(){
         PageFactory.initElements(driver,this);
     }
-    /**Given a user navigates to bmw.com
+    /**navigates from home page to linked page
+     * Given a user navigates to bmw.com
      * when user clicks onBMW Electric
      * then user shod be in section of electroMobility,*/
 @FindBy(xpath = "//a[.='BMW Electric']")
     public WebElement BMWElectric;
 @FindBy(xpath = "//h2[@class='globalnav-local__title label-1--bold']")
 public WebElement electroMobility;
-    /**Given a user navigates to bmw.com
+    /**play a video
+     * Given a user navigates to bmw.com
      * And user clicks onBMW Electric
      * and user navigates tosection of electroMobility,
      * When user clicks on plag in Hybrid
