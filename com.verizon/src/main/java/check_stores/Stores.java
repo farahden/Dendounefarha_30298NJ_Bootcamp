@@ -31,12 +31,6 @@ public class Stores extends BasePage {
     @FindBy(xpath = "//span[.='Use my location']")
     public WebElement usingLocation;
 
-    /*  @FindBy(xpath = "")
-      public WebElement;
-      @FindBy(xpath = "")
-      public WebElement;
-      @FindBy(xpath = "")
-      public WebElement;*/
     Actions act=new Actions(driver);
     public void setStores(){stores.click();}
     public void setZipCodeField(){sendKeysToElement(zipCodeField,"07306");}

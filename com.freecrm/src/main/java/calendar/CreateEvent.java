@@ -123,39 +123,5 @@ public void enterTitle(){sendKeysToElement(inputtitle,"set the app logo");}
         }}
 
 
-   /* public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}
-    @FindBy(xpath = "")
-    public WebElement element;
-    public void setElement(){}*/
-
-
-
 
 }
